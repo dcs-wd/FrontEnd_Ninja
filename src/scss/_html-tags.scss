@@ -1,0 +1,72 @@
+// Estilos de los tags HTML genéricos
+body {
+  font-family: $main-font-family;
+  font-size: $font-size-base;
+  color: $main-text-color;
+  background: url("#{$images-path}doodles.png");
+  padding-top: $header-height;
+}
+
+// Estilos de los títulos
+$titles-fonts-sizes: $font-size-h1, $font-size-h2, $font-size-h3, $font-size-h4,
+  $font-size-h5, $font-size-h6;
+@for $i from 1 through length($titles-fonts-sizes) {
+  h#{$i} {
+    font-family: $title-font-family;
+    font-size: nth($titles-fonts-sizes, $i);
+  }
+}
+
+// Estilos de los enlaces
+a {
+  color: $links-color;
+  text-decoration: none;
+  &:hover {
+    color: $links-hover-color;
+    transition: all 0.25s;
+  }
+}
+
+// Elementos responsive
+img,
+video,
+embed,
+object {
+  max-width: 100%;
+}
+
+// Estilos de elementos de formulario
+input {
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  border: 1px solid $border-color;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: $font-size-base;
+  &.error {
+    border: 1px solid $error-color;
+    color: $error-color;
+  }
+  &:focus {
+    outline-color: $outline-color;
+  }
+}
+
+textarea {
+  @extend input;
+  font-family: $main-font-family;
+}
+
+button {
+  @extend input;
+  background-color: $button-background;
+  color: white;
+  transition: all $default-transition-time;
+  &:hover {
+    background: lighten($button-background, 10%);
+  }
+  &[disabled] {
+    opacity: 0.25;
+  }
+}
