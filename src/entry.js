@@ -6,6 +6,9 @@ import { FormController } from "./js/FormController";
 import { ArticlesService } from "./js/ArticlesService";
 import { PubSub } from "pubsub-js";
 
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 document.addEventListener("DOMContentLoaded", () => {
   let appController = new AppController("body", PubSub);
   let headerController = new HeaderController(".web-header", appController);
