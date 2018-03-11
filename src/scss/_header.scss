@@ -28,6 +28,26 @@
     border-radius: 100%;
   }
 
+  .categories-menu {
+    border: 0;
+    background: transparent;
+    text-align: center;
+    transition: all $default-transition-time;
+    padding-bottom: 2px;
+
+    a {
+      color: $links-color;
+      transition: all $default-transition-time;
+      padding-bottom: 2px;
+
+      &:hover,
+      &:active {
+        color: $links-hover-color;
+        background: $dropdown-background;
+      }
+    }
+  }
+
   .input-group {
     width: 100% !important;
   }

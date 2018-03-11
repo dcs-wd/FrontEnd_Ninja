@@ -35,6 +35,7 @@ export class ArticlesListController {
                     <div class="artist">${article.blogger}</div>
                     <div class="text">${article.text}</div>
                 </div>
+                <a href="article.html">Leer más</a>
             </article>`;
     }
     this.element.innerHTML = html;

@@ -12,12 +12,20 @@
     display: block;
   }
 
+  div {
+    margin: 0 0 15px 18px;
+  }
+
   @include if-is-extra-large-device {
     height: auto;
     box-shadow: 0 1px 5px $shadow-color;
 
     div {
       flex-grow: 1;
+    }
+
+    div:first-child {
+      margin-left: 18px;
     }
 
     body.show-form & {

@@ -1,11 +1,11 @@
 // Variables de SASS
 
 // Paths
-$images-path: '../assets/img/';
+$images-path: "../assets/img/";
 
 // Font families
-$main-font-family: 'Nunito', sans-serif;
-$title-font-family: 'Bree Serif', serif;
+$main-font-family: "Nunito", sans-serif;
+$title-font-family: "Bree Serif", serif;
 
 // Font sizes
 $font-size-base: 18px;
@@ -20,10 +20,10 @@ $font-size-h6: $font-size-base;
 
 // Colors
 $color-mightly-slate: #556270;
-$color-pacifica: #4ECDC4;
-$color-apple-chic: #C7F464;
-$color-cheery-pink: #FF6B6B;
-$color-grandmas-pillow: #C44D58;
+$color-pacifica: #4ecdc4;
+$color-apple-chic: #c7f464;
+$color-cheery-pink: #ff6b6b;
+$color-grandmas-pillow: #c44d58;
 
 // Main components colors
 $main-text-color: $color-mightly-slate;
@@ -33,6 +33,7 @@ $brand-color: $color-cheery-pink;
 $shadow-color: lighten(black, 30%);
 $border-color: $color-mightly-slate;
 $button-background: $color-mightly-slate;
+$dropdown-background: lighten($color-mightly-slate, 10%);
 $error-color: $color-grandmas-pillow;
 $outline-color: $color-pacifica;
 

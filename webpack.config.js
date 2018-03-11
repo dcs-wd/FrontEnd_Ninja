@@ -74,6 +74,12 @@ module.exports = {
       minify: {
         collapseWhitespace: true
       }
+    }),new HtmlWebpackPlugin({
+      filename: "article.html",
+      template: path.join(__dirname, "src", "article.html"),
+      minify: {
+        collapseWhitespace: true
+      }
     }),
     new ExtractTextPlugin("style.css")
   ],
