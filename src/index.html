@@ -1,20 +1,3 @@
 <%= require('html-loader!./includes/header.html') %>
     <section class="articles-list"></section>
-    <form novalidate class="articles-form animated slideInDown">
-        <div>
-            <input type="text" id="artist" name="artist" placeholder="Artist" required>
-        </div>
-        <div>
-            <input type="text" id="title" name="title" placeholder="Article title" required>
-        </div>
-        <div>
-            <input type="url" id="cover" name="cover" placeholder="Cover URL">
-        </div>
-        <div>
-            <textarea type="text" id="contentText" name="contentText" placeholder="Article Text" required></textarea>
-        </div>
-        <div>
-            <button disabled>Create article</button>
-        </div>
-    </form>
     <%= require('html-loader!./includes/footer.html') %>

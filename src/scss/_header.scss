@@ -1,33 +1,69 @@
 @import "mixins/transparent-background";
 
 .web-header {
-    position: fixed;
-    width: 100%;
-    height: $header-height;
-    box-sizing: border-box;
-    z-index: 99999;
-    top: 0;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 0 5px $shadow-color;
-    margin: 0 0 30px 0;
-    @include transparent-background(white);
+  position: fixed;
+  width: 100%;
+  height: $header-height;
+  box-sizing: border-box;
+  z-index: 99999;
+  top: 0;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 0 30px 0;
 
-    .web-title {
-        color: $brand-color;
-        text-shadow: 0 1px 1px $shadow-color;
+  .bg-transparent {
+    @include transparent-background(#343a40);
+  }
+
+  .web-title {
+    color: $brand-color;
+    text-shadow: 0 1px 1px $shadow-color;
+  }
+
+  .small-device-menu {
+    border: 2px solid $links-color;
+    width: 50px;
+    color: $links-color;
+    background: transparent;
+    border-radius: 100%;
+  }
+
+  .input-group {
+    width: 100% !important;
+  }
+
+  .search-engine {
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid $brand-color;
+    color: $brand-color;
+  }
+
+  .btn-search {
+    background: transparent;
+    width: 50px;
+    color: $brand-color;
+  }
+
+  .nav-item {
+    padding: 15px 0;
+    transition: all $default-transition-time;
+
+    &:hover {
+      background: $border-color;
     }
+  }
 
-    .fa {
-        position: absolute;
-        right: 20px;
-        top: 25px;
-        font-size: 25px;
-        transition: all $default-transition-time;
+  .item-link {
+    text-decoration: none;
+    color: $links-color;
+    transition: all $default-transition-time;
+    padding-bottom: 2px;
 
-        body.show-form & {
-            transform: rotate(3 * -45deg)
-        }
+    &:hover {
+      color: $links-hover-color;
+      border-bottom: 2px solid $links-hover-color;
     }
-
+  }
 }

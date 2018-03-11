@@ -5,11 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Be FrontEnd Ninja</title>
+    <link rel="shortcut icon" type="image/png" href="..\assets\img\logo.png" />
+    <title>Be FrontEnd</title>
 </head>
 
-<body>
+<body id="web__top">
     <header class="web-header">
-        <i class="fa fa-plus-circle"></i>
-        <h1 class="web-title">Be FrontEnd Ninja</h1>
+        <nav class="navbar bg-transparent fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="..\assets\img\logo.png" width="30" height="30" alt="">
+            </a>
+
+            <button class="small-device-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="item-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="item-link" href="#">Categories</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="search" class="form-control search-engine" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-search" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
     </header>

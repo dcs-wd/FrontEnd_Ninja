@@ -1,7 +1,11 @@
-@mixin transparent-background($color, $alpha:0.2, $time:$default-transition-time) {
-    transition: $time;
-    background: transparentize($color, $alpha);
-    &:hover {
-        background: opacify($color, 1);
-    }
+@mixin transparent-background(
+  $color,
+  $alpha: 0.2,
+  $time: $default-transition-time
+) {
+  transition: $time;
+  background: transparentize($color, $alpha) !important;
+  &:hover {
+    background: opacify($color, 1) !important;
+  }
 }
