@@ -66,4 +66,16 @@
       border-bottom: 2px solid $links-hover-color;
     }
   }
+
+  .add-article {
+    color: $links-color;
+    transition: all $default-transition-time;
+    padding-bottom: 2px;
+    cursor: pointer;
+
+    &:hover {
+      color: $links-hover-color;
+      border-bottom: 2px solid $links-hover-color;
+    }
+  }
 }
